@@ -1,7 +1,7 @@
 <?php
 class Auth extends Controller {
     public static function notSession(){
-        header('location:http://localhost/metakMVC/login');
+        header('location:' . PATH . 'login');
     }
     public function login($password){
         $sql = 'SELECT *FROM users WHERE password = ?';
@@ -10,7 +10,10 @@ class Auth extends Controller {
         $user = $user->fetch();
         if($user){
            $_SESSION['userlogin'] = $user['id'];
-           header('location:http://localhost/metakMVC/admin');
+           header('location:' . PATH . 'admin');
+        }
+        else{
+            echo '<script>alert("ŞİFRƏ YANLIŞDIR")</script>';
         }
     }
 }
