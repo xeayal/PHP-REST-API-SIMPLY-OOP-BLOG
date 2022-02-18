@@ -10,16 +10,14 @@
 <body>
     <div class="container">
         <div class="row mt-5">
-            <center>
-                <div class="col-3 alert alert-primary">
-                    <a class="position-absolute top-50 start-50 translate-middle text-decoration-none"
-                        href="posts/">POSTLAR</a>
+                <div class="col-lg-12">
+                    <div class="col-lg-12 alert alert-primary">
+                        <center><a class="text-center text-decoration-none" href="posts/">POSTLAR</a></center>
+                    </div>
+                    <div class="col-lg-12 alert alert-success">
+                        <center><a class="text-decoration-none" href="login">YENİ POST ƏLAVƏ ET</a></center>
+                    </div>
                 </div>
-                <div class="col-3 alert alert-success">
-                    <a class="position-absolute top-50 start-50 translate-middle text-decoration-none" href="login">YENİ
-                        POST ƏLAVƏ ET</a>
-                </div>
-            </center>
         </div>
     </div>
 </body>
