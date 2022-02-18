@@ -6,8 +6,9 @@ define("PATH","http://localhost/metakMVC/");
 
 require_once __DIR__. '/app/init.php';
 
-$url = trim($_GET['url']);
+$url = htmlspecialchars($_GET['url']);
 
+//get`den eger data gelmirse `home` qebul et
 if($url == ''){
     $url = 'home';
 }
