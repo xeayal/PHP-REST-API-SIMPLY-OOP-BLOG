@@ -1,5 +1,6 @@
 <?php
-class Connect {
+//BAZA baglantisi
+class Config {
     private $host = 'localhost';
     private $user = 'root';
     private $pass = '';

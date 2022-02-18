@@ -1,5 +1,5 @@
 <?php
-
+//user terefde butun paylasimlarin listelendiyi sehife
 class Posts extends Controller {
     public $page = 1;
 

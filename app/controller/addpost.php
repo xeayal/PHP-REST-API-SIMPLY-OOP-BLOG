@@ -1,4 +1,5 @@
 <?php
+//adminpanelde yeni post elave etmek 
 class addpost extends Controller {
     public function index(){
         if(isset($_POST['addPost'])){

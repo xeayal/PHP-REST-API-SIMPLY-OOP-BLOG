@@ -1,4 +1,5 @@
 <?php
+// url ile uygun paylasima getmek
 class Post extends Controller {
 
     public function index($url){

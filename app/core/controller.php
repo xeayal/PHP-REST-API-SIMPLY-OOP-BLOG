@@ -1,5 +1,6 @@
 <?php
-class Controller extends Connect{
+//view ve model sehifelerini idare etmek ucun controller
+class Controller extends Config{
     public function view($view, $data){
         require_once 'app/view/' . $view . '.view.php';
     }

@@ -1,4 +1,5 @@
 <?php
+//admin panelin ana sehifesi
 class Admin extends Controller {
      public function index(){
          if(isset($_SESSION['userlogin'])){

@@ -50,7 +50,7 @@ class PostData extends Connect {
             header('location:404.php');
         }
     }
-
+    //paylasim ucun post edilen şekli servere upload etmek
     public static function fileUpload($file){
         $fileFormat = pathinfo($file['name'],PATHINFO_EXTENSION);
         $fileName = $file['name'] = uniqid().'.'.$fileFormat;
