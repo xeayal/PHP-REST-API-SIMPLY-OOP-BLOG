@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POSTLAR</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?=PATH ?>app/view/css/bootstrap.min.css">
+    
 </head>
 <body>
     <div class="container">
@@ -15,13 +15,13 @@
                 <div class="col-lg-12 ">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/metakMVC/admin/posts">POSTLAR</a>
+                            <a class="nav-link active" href="<?=PATH ?>admin/posts">POSTLAR</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/metakMVC/admin/addpost">Yeni əlavə et</a>
+                            <a class="nav-link" href="<?=PATH ?>admin/addpost">Yeni əlavə et</a>
                         </li>
                         <li class="nav-item float-right">
-                            <a class="nav-link" href="http://localhost/metakMVC/logout">Çıxış</a>
+                            <a class="nav-link" href="<?=PATH ?>logout">Çıxış</a>
                         </li>
                     </ul>
                 </div>
