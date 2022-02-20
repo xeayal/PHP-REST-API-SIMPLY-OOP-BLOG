@@ -24,13 +24,13 @@ Router::get("admin", function(){
     $page = explode('/', $url)[1];
     if($page == 'addpost'){
         require_once 'app/controller/addpost.php';
-        $tt = new $page();
-        $tt -> index();
+        $page = new $page();
+        $page -> index();
     }
     elseif($page == 'posts' || $page == ''){
         require_once 'app/controller/admin.php';
-        $tt = new Admin();
-        $tt -> index();
+        $page = new Admin();
+        $page -> index();
     }
 
 
