@@ -18,8 +18,9 @@ $api = $_SERVER['REQUEST_METHOD'];
 if ($api == 'POST') {
 	$name = DB::test_input($_POST['name']);
 	$text = DB::test_input($_POST['text']);
-    $img = $post->fileUpload($_POST['img']);
-    $insert = $post->insert($name, $text, $img);
+    	$img = $post->fileUpload($_POST['img']);
+    	$insert = $post->insert($name, $text, $img);
+	
 	if ($insert) {
 		echo $post->message('UĞURLA ƏLAVƏ EDİLDİ',false);
 	} else {
